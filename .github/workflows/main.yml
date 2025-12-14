@@ -19,3 +19,9 @@ jobs:
         path: "."
         format: "HTML"
         out: "dependency-check-report"
+
+    - name: Upload Dependency-Check Report
+      uses: actions/upload-artifact@v3
+      with:
+        name: dependency-check-report
+        path: dependency-check-report
